@@ -8,84 +8,335 @@
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 
-
 <body>
-  <nav class="navbar navbar-light bg-light">
+  <div class="header">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <i class="fa fa-instagram" aria-hidden="true"></i>
-    <a class="navbar-brand" href="#"></a>Instagram</a>
-
-    <div class="btn-group">
-      <div class="button me-md-3">
-        <button type="button" class="btn btn-success btn-sm">Create New Post</button>
-      </div>
-        <button type="button" class="btn btn-secondary dropdown-toggle btn-sm" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear"
-            viewBox="0 0 16 16">
-            <path
-              d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
-            <path
-              d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Profile</a>
-              <a class="dropdown-item" href="#">Acessability</a>
-              <a class="dropdown-item" href="#">Privacy and Data</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Log out</a>
-            </div>
-          </svg>
+      <div class="container-fluid">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
+          viewBox="0 0 16 16">
+          <path
+            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+        </svg>
+        <a class="navbar-brand" href="#"></a><a>Instagram</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-    </div>
-    
-  </nav>
-  <div class="container-fluid">
-    <div class="row justify-content-center">
-      <div class="card col-3 me-md-3">
-        <img src="https://radseason.com/wp-content/uploads/2018/09/Coxos-1.jpg" class="img-thumbnail" alt="200x200">
+
+        <div class="collapse navbar-collapse clear-flix justify-content-end" id="navbarSupportedContent">
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Create New Post
+          </button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body container-fluid">
+                  <h5>Caption:</h5>
+                  <div class="form-group">
+                    <textarea class="form-control" id="textMessage" rows="3"
+                      placeholder="Add the caption of your post"></textarea>
+                  </div>
+                  <a href="#" data-bs-toggle="tooltip" title="Tooltip">
+                    <div class="userFiles">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                        class="bi bi-camera-fill" viewBox="0 0 16 16">
+                        <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                        <path
+                          d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z" />
+                      </svg>
+                  </a>
+
+                  <a href="#" data-bs-toggle="tooltip" title="Tooltip">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                      class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                    </svg></a> </p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success"">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type=" button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-gear-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                  <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Log out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card col-3 me-md-3">
-        <img src="https://www.xtremespots.com/wp-content/uploads/2013/12/Surfer-facing-a-wave-in-Supertubos.jpg"
-          class="img-thumbnail" alt="200x200">
-      </div>
-      <div class="card col-3 me-md-3">
-        <img src="https://www.surfholidays.com/assets/images/blog/2020-01-17-espinho-jpg.jpg" class="img-thumbnail"
-          alt="200x200"">
-      </div>
-    </div>
+    </nav>
   </div>
 
-  <div class="container-fluid">
-        <div class="row justify-content-center">
-          <div class=" grid col-3 me-md-3">
-            <img src="https://www.skateboardershq.com/wp-content/uploads/2022/04/surfer-duck-diving-a-wave-340-200x200.jpg" class="img-thumbnail" alt="200x200">
-          </div>
-          <div class="grid col-3 me-md-3">
-            <img src="https://www.xtremespots.com/wp-content/uploads/2013/12/Surfer-facing-a-wave-in-Supertubos.jpg"
-              class="img-thumbnail" alt="200x200">
-          </div>
-          <div class="grid col-3 me-md-3">
-            <img src="https://www.surfholidays.com/assets/images/blog/2020-01-17-espinho-jpg.jpg" class="img-thumbnail"
-              alt="200x200">
-          </div>
-        </div>
+  <div class="container">
+    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+          type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-table"
+            viewBox="0 0 16 16">
+            <path
+              d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z" />
+          </svg></button>
+      </li>
 
-        <div class="container-fluid">
-          <div class="row justify-content-center"">
-      <div class=" grid col-3 me-md-3">
-            <img src="https://radseason.com/wp-content/uploads/2018/09/Coxos-1.jpg" class="img-thumbnail" alt="200x200">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+          type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square-fill"
+            viewBox="0 0 16 16">
+            <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z" />
+          </svg></button>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+        tabindex="0">
+        <div class="row justify-content-center">
+          <div class="col-4 ps-1">
+            <img
+              src="https://s2-ge.glbimg.com/aEirHh7jbK6vXNVVjypcfEz-njU=/0x0:1080x1080/600x0/smart/filters:gifv():strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2020/U/e/BapYzJQLS2izUogSsSvg/jadson-andre-maldivas-2.jpg"
+              class="img-fluid" alt="240x240px">
           </div>
-          <div class="grid col-3 me-md-3">
-            <img src="https://www.xtremespots.com/wp-content/uploads/2013/12/Surfer-facing-a-wave-in-Supertubos.jpg"
-              class="img-thumbnail" alt="200x200">
+          <div class="col-4 ps-1">
+            <img src="https://i.pinimg.com/originals/f1/d8/3e/f1d83ee6fb18c702029408eef538d8e3.jpg" class="img-fluid"
+              alt="240x240">
           </div>
-          <div class="grid col-3 me-md-3">
-            <img src="https://www.surfholidays.com/assets/images/blog/2020-01-17-espinho-jpg.jpg" class="img-thumbnail"
-              alt="200x200">
+          <div class="col-4 ps-1">
+            <img
+              src="https://3.bp.blogspot.com/-Spovz86Z1ew/We6-XBkXEII/AAAAAAAAJX4/KhNQ7QcAeP4vWmf22yRYV9XjTpYV9dXsgCLcBGAs/s1600/722b94e0-2582-4237-b80a-2fdd6894b60a.jpg"
+              class="img-fluid" lt="240px" width="100%">
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-4 ps-1">
+              <img
+                src="https://jasonhibbs.co.uk/wp-content/uploads/2016/07/1468739747.jpg"
+                class="img-fluid" alt="240px" width="100%"">
+            </div>
+            <div class=" col-4 ps-1">
+              <img
+                src="https://images.unsplash.com/photo-1582108719562-c06540b4aa8e?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjE2MDExMn0"
+                class="img-fluid" lt="240px" width="100%">
+            </div>
+            <div class="col-4 ps-1">
+              <img src="https://i.pinimg.com/originals/8e/cd/37/8ecd37e7792c367958581ca85fb6ee6b.jpg" class="img-fluid"
+                lt="240px" width="100%">
+            </div>
+          </div>
+
+
+
+          <div class="row justify-content-center">
+            <div class=" col-4">
+              <img
+                src="https://cdn.theatlantic.com/thumbor/BiydSCme-1i0xKXLWffD83OpbTw=/1230x0:3500x2270/1080x1080/media/img/mt/2017/07/RTR4LBC8/original.jpg"
+                jsaction="VQAsE" class="img-fluid" lt="240px" width="100%">
+            </div>
+            <div class=" col-4">
+              <img src="https://cdn.shopify.com/s/files/1/1035/1651/files/Website-Hero-2023-mobile.jpg?v=1695209358"
+                class="img-fluid" alt="240px" width="100%">
+            </div>
+            <div class=" col-4">
+              <img src="https://images.impresa.pt/sicnot/2023-04-19-Oceano.jpg-09491744/1x1/mw-1200&outputFormat=jpeg"
+                class="img-fluid" alt="240px" width="100%">
+            </div>
           </div>
         </div>
       </div>
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+        <div class="card col-md-6 offset-md-3">
+          <div class="header d-flex justify-content-between">
+            <h4>Taking risk</h4>
+            <h5>1/3</h5>
+          </div>
+          <img
+            src="https://s2-ge.glbimg.com/aEirHh7jbK6vXNVVjypcfEz-njU=/0x0:1080x1080/600x0/smart/filters:gifv():strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2020/U/e/BapYzJQLS2izUogSsSvg/jadson-andre-maldivas-2.jpg"
+            class="img-fluid" alt="240x240px">
+          <div class="card-body">
+            <p class="card-text">
+              <strong> 240 Likes</strong>
+              <br>
+              ...is a way to immerse into the flow
+            </p>
+          </div>
+        </div>
+        <br>
+
+        <div class="card col-md-6 offset-md-3">
+          <div class="header d-flex justify-content-between">
+            <h4> Let feel </h4>
+            <h5>2/3</h5>
+          </div>
+          <img src="https://i.pinimg.com/originals/f1/d8/3e/f1d83ee6fb18c702029408eef538d8e3.jpg" class="img-fluid"
+            alt="240x240">
+          <div class="card-body">
+            <p class="card-text">
+              <strong> 250 Likes</strong>
+              <br>
+              ...the energy blalgla
+
+            </p>
+          </div>
+        </div>
+        <br>
+        <div class="card col-md-6 offset-md-3">
+          <div class="header d-flex justify-content-between">
+            <h4> Nr 3 </h4>
+            <h5>3/3</h5>
+          </div>
+          <img
+            src="https://3.bp.blogspot.com/-Spovz86Z1ew/We6-XBkXEII/AAAAAAAAJX4/KhNQ7QcAeP4vWmf22yRYV9XjTpYV9dXsgCLcBGAs/s1600/722b94e0-2582-4237-b80a-2fdd6894b60a.jpg"
+            class="img-fluid" lt="240px" width="100%">
+          <div class="card-body">
+            <p class="card-text">
+              <strong> 260 Likes</strong>
+              <br>
+              ..gsdngksndkglsd;ngks sdng;sdg s
+            </p>
+          </div>
+        </div>
+        <br>
+
+        <div class="card col-md-6 offset-md-3">
+          <div class="header d-flex justify-content-between">
+            <h4> Nr 4 ngkdsgs </h4>
+            <h5>1/2</h5>
+          </div>
+          <img
+            src="https://jasonhibbs.co.uk/wp-content/uploads/2016/07/1468739747.jpg"
+            class="img-fluid" alt="240px" width="100%"">
+          <div class=" card-body">
+          <p class="card-text">
+            <strong> 260 Likes</strong>
+            <br>
+            ..gsdngksndkglsd;ngks sdng;sdg s
+          </p>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="card col-md-6 offset-md-3">
+        <div class="header d-flex justify-content-between">
+          <h4> Nr 5 ngkdsgs </h4>
+          <h5>2/2</h5>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1582108719562-c06540b4aa8e?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjE2MDExMn0"
+          class="img-fluid" lt="240px" width="100%">
+        <div class=" card-body">
+          <p class="card-text">
+            <strong> 270 Likes</strong>
+            <br>
+            ..ajjajsjajjaa
+          </p>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="card col-md-6 offset-md-3">
+        <div class="header d-flex justify-content-between">
+          <h4> Nr 6 ngkdsgs </h4>
+          <h5>3/2</h5>
+        </div>
+        <img src="https://i.pinimg.com/originals/8e/cd/37/8ecd37e7792c367958581ca85fb6ee6b.jpg" class="img-fluid"
+          lt="240px" width="100%">
+        <div class=" card-body">
+          <p class="card-text">
+            <strong> 280 Likes</strong>
+            <br>
+            ..Yeeah
+          </p>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="card col-md-6 offset-md-3">
+        <div class="header d-flex justify-content-between">
+          <h4> Nr 7 ngkdsgs </h4>
+          <h5>1/3</h5>
+        </div>
+        <img
+          src="https://cdn.theatlantic.com/thumbor/BiydSCme-1i0xKXLWffD83OpbTw=/1230x0:3500x2270/1080x1080/media/img/mt/2017/07/RTR4LBC8/original.jpg"
+          jsaction="VQAsE" class="img-fluid" lt="240px" width="100%">
+
+        <div class=" card-body">
+          <p class="card-text">
+            <strong> 290 Likes</strong>
+            <br>
+            ..Yeelo vello
+          </p>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="card col-md-6 offset-md-3">
+        <div class="header d-flex justify-content-between">
+          <h4> 8 ngkdsgs </h4>
+          <h5>2/3</h5>
+        </div>
+        <img src="https://cdn.shopify.com/s/files/1/1035/1651/files/Website-Hero-2023-mobile.jpg?v=1695209358"
+          class="img-fluid" alt="240px" width="100%">
+        <div class=" card-body">
+          <p class="card-text">
+            <strong> 300 Likes</strong>
+            <br>
+            ..yeah yeah and yeah
+          </p>
+        </div>
+      </div>
+      <br>
+
+      <div class="card col-md-6 offset-md-3">
+        <div class="header d-flex justify-content-between">
+          <h4> Nr 9 ngkdsgs </h4>
+          <h5>3/3</h5>
+        </div>
+        <img src="https://images.impresa.pt/sicnot/2023-04-19-Oceano.jpg-09491744/1x1/mw-1200&outputFormat=jpeg"
+          class="img-fluid" alt="240px" width="100%">
+        <div class=" card-body">
+          <p class="card-text">
+            <strong> 310 Likes</strong>
+            <br>
+            ..yeah yeah yeah
+          </p>
+        </div>
+      </div>
     </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
 </body>
+
 
 </html>
