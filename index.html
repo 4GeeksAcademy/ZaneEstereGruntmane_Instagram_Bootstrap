@@ -4,94 +4,85 @@
 <head>
   <title>Instagram Photo Feed with Bootstrap</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body>
-  <div class="header py-10">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-instagram"
-          viewBox="0 0 16 16">
-          <path
-            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-        </svg>
-        <a class="navbar-brand fs-3 ms-2" href="#">Instagram</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-instagram"
+        viewBox="0 0 16 16">
+        <path
+          d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+      </svg>
+      <a class="navbar-brand fs-3 ms-2" href="#">Instagram</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse d-grid gap-2 d-md-flex justify-content-md-end" id="navbarSupportedContent">
+        <button type="button" class="btn btn-success fs-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Create New Post
         </button>
-
-        <div class="collapse navbar-collapse d-grid gap-2 d-md-flex justify-content-md-end" id="navbarSupportedContent">
-          <button type="button" class="btn btn-success fs-4 mx-10 my-10" data-bs-toggle="modal"
-            data-bs-target="#exampleModal">
-            Create New Post
-          </button>
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-3 pe-5" id="exampleModalLabel">Create a new post</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body container-fluid">
-                  <h5>Caption:</h5>
-                  <div class="form-group">
-                    <textarea class="form-control" id="textMessage" rows="3"
-                      placeholder="Add the caption of your post"></textarea>
-                  </div>
-                  <a href="#" data-bs-toggle="tooltip" title="Tooltip">
-                    <div class="userFiles p-30">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="grey"
-                        class="bi bi-camera-fill" viewBox="0 0 16 16">
-                        <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
-                        <path
-                          d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z" />
-                      </svg>
-                  </a>
-
-                  <a href="#" data-bs-toggle="tooltip" title="Tooltip">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="grey"
-                      class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                    </svg></a> </p>
-                </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 pe-5" id="exampleModalLabel">Create a new post</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-success"">Save changes</button>
-                  </div>
+              <div class="modal-body container-fluid">
+                <h5>Caption:</h5>
+                <div class="form-group">
+                  <textarea class="form-control" id="textMessage" rows="3"
+                    placeholder="Add the caption of your post"></textarea>
                 </div>
+                <a href="#" data-bs-toggle="tooltip" title="Tooltip">
+                  <div class="userFiles p-30">
+                    <i class="fa-solid fa-camera fa-xl text-secondary"></i>
+                </a>
+
+                <a href="#" data-bs-toggle="tooltip" title="Tooltip">
+                  <i class="fa-solid fa-location-dot fa-xl text-secondary"></i></a>
               </div>
             </div>
-
-            <button type=" button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
-                    class="bi bi-gear-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
-                  </svg>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Profile</a></li>
-                  <li><a class="dropdown-item" href="#">Accessibility</a></li>
-                  <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Log out</a></li>
-                </ul>
-              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Save changes</button>
             </div>
           </div>
         </div>
       </div>
-    </nav>
-  </div>
+
+      <div class="btn-group">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-gear-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+            </svg></span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end"">
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="#">Accessibility</a></li>
+          <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
 
   <div class="container-fluid pl=0 pr=0">
     <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
@@ -118,106 +109,192 @@
     <div class="tab-content" id="pills-tabContent">
       <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
         tabindex="0">
-        <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
-          <div class="col">
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-4 g-2">
             <img
               src="https://s2-ge.glbimg.com/aEirHh7jbK6vXNVVjypcfEz-njU=/0x0:1080x1080/600x0/smart/filters:gifv():strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2020/U/e/BapYzJQLS2izUogSsSvg/jadson-andre-maldivas-2.jpg"
               class="img-fluid" width="100%" height="425px">
           </div>
-          <div class="col">
+          <div class="col-sm-6 col-md-6 col-lg-4 g-2">
             <img src="https://i.pinimg.com/originals/f1/d8/3e/f1d83ee6fb18c702029408eef538d8e3.jpg" class="img-fluid"
               width="100%" height="425px">
           </div>
-          <div class="col">
+          <div class="col-sm-6 col-md-6 col-lg-4 g-2">
             <img
               src="https://3.bp.blogspot.com/-Spovz86Z1ew/We6-XBkXEII/AAAAAAAAJX4/KhNQ7QcAeP4vWmf22yRYV9XjTpYV9dXsgCLcBGAs/s1600/722b94e0-2582-4237-b80a-2fdd6894b60a.jpg"
               class="img-fluid" width="100%" height="425px">
           </div>
-        </div>
-        <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
-          <div class="col">
+
+          <div class="col-sm-6 col-md-6 col-lg-4 g-2">
             <img src="https://jasonhibbs.co.uk/wp-content/uploads/2016/07/1468739747.jpg" class="img-fluid" width="100%"
               height="425px">
           </div>
-          <div class=" col">
+          <div class="col-sm-6 col-md-6 col-lg-4 g-2">
             <img
               src="https://images.unsplash.com/photo-1582108719562-c06540b4aa8e?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjE2MDExMn0"
               class="img-fluid" width="100%" height="425px">
           </div>
-          <div class="col">
+          <div class="col-sm-6 col-md-6 col-lg-4 g-2">
             <img src="https://i.pinimg.com/originals/8e/cd/37/8ecd37e7792c367958581ca85fb6ee6b.jpg" class="img-fluid"
               width="100%" height="425px">
           </div>
-        </div>
 
-        <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
-          <div class="col">
+          <div class="col-sm-6 col-md-6 col-lg-4 g-2">
             <img
               src="https://cdn.theatlantic.com/thumbor/BiydSCme-1i0xKXLWffD83OpbTw=/1230x0:3500x2270/1080x1080/media/img/mt/2017/07/RTR4LBC8/original.jpg"
               jsaction="VQAsE" class="img-fluid" width="100%" height="425px">
           </div>
-          <div class="col">
+          <div class="col-sm-6 col-md-6 col-lg-4 g-2">
             <img src="https://cdn.shopify.com/s/files/1/1035/1651/files/Website-Hero-2023-mobile.jpg?v=1695209358"
               class="img-fluid" width="100%" height="425px">
           </div>
-          <div class="col">
+          <div class="col-sm-6 col-md-6 col-lg-4 g-2">
             <img src="https://images.impresa.pt/sicnot/2023-04-19-Oceano.jpg-09491744/1x1/mw-1200&outputFormat=jpeg"
               class="img-fluid" width="100%" height="425px">
           </div>
         </div>
       </div>
-    </div>
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+        <div class="card col-md-6 offset-md-3">
+          <div class="header d-flex justify-content-between mt-3 mb-3 ms-3 me-3">
+            <h4 class="fs-4">Taking a risk</h4>
+            <h5 class="fs-6">1/1</h5>
+          </div>
+          <img
+            src="https://s2-ge.glbimg.com/aEirHh7jbK6vXNVVjypcfEz-njU=/0x0:1080x1080/600x0/smart/filters:gifv():strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2020/U/e/BapYzJQLS2izUogSsSvg/jadson-andre-maldivas-2.jpg"
+            class="img-fluid" alt="240x240px">
+          <div class="card-body">
+            <p class="card-text  fs-4">
+              <strong> 240 Likes </strong>
+              <br>
+              ...to immerse into the flow.
+            </p>
+          </div>
+        </div>
+        <br>
 
+        <div class="card col-md-6 offset-md-3">
+          <div class="header d-flex justify-content-between mt-3 mb-3 ms-3 me-3">
+            <h4 class="fs-4"> Following the energy </h4>
+            <h5 class="fs-6">2/1</h5>
+          </div>
+          <img src="https://i.pinimg.com/originals/f1/d8/3e/f1d83ee6fb18c702029408eef538d8e3.jpg" class="img-fluid"
+            alt="240x240">
+          <div class="card-body">
+            <p class="card-text  fs-4">
+              <strong> 250 Likes</strong>
+              <br>
+              ...to sense a mutual movement in translation.
 
-    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-      <div class="card col-md-6 offset-md-3">
-        <div class="header d-flex justify-content-between mt-3 mb-3 ms-3 me-3">
-          <h4 class="fs-4">Taking a risk</h4>
-          <h5 class="fs-6">1/1</h5>
+            </p>
+          </div>
         </div>
-        <img
-          src="https://s2-ge.glbimg.com/aEirHh7jbK6vXNVVjypcfEz-njU=/0x0:1080x1080/600x0/smart/filters:gifv():strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2020/U/e/BapYzJQLS2izUogSsSvg/jadson-andre-maldivas-2.jpg"
-          class="img-fluid" alt="240x240px">
-        <div class="card-body">
-          <p class="card-text  fs-4">
-            <strong> 240 Likes </strong>
-            <br>
-            ...to immerse into the flow.
-          </p>
+        <br>
+        <div class="card col-md-6 offset-md-3">
+          <div class="header d-flex justify-content-between mt-3 mb-3 ms-3 me-3">
+            <h4 class="fs-4"> Keep moving </h4>
+            <h5 class="fs-6">3/1</h5>
+          </div>
+          <img
+            src="https://3.bp.blogspot.com/-Spovz86Z1ew/We6-XBkXEII/AAAAAAAAJX4/KhNQ7QcAeP4vWmf22yRYV9XjTpYV9dXsgCLcBGAs/s1600/722b94e0-2582-4237-b80a-2fdd6894b60a.jpg"
+            class="img-fluid" lt="240px" width="100%">
+          <div class="card-body">
+            <p class="card-text  fs-4">
+              <strong> 260 Likes</strong>
+              <br>
+              ... to experience infinity in a second.
+            </p>
+          </div>
         </div>
-      </div>
-      <br>
+        <br>
 
-      <div class="card col-md-6 offset-md-3">
-        <div class="header d-flex justify-content-between mt-3 mb-3 ms-3 me-3">
-          <h4 class="fs-4"> Following the energy </h4>
-          <h5 class="fs-6">2/1</h5>
-        </div>
-        <img src="https://i.pinimg.com/originals/f1/d8/3e/f1d83ee6fb18c702029408eef538d8e3.jpg" class="img-fluid"
-          alt="240x240">
-        <div class="card-body">
-          <p class="card-text  fs-4">
-            <strong> 250 Likes</strong>
-            <br>
-            ...to sense a mutual movement in translation.
-
-          </p>
-        </div>
-      </div>
-      <br>
-      <div class="card col-md-6 offset-md-3">
-        <div class="header d-flex justify-content-between mt-3 mb-3 ms-3 me-3">
-          <h4 class="fs-4"> Keep moving </h4>
-          <h5 class="fs-6">3/1</h5>
-        </div>
-        <img
-          src="https://3.bp.blogspot.com/-Spovz86Z1ew/We6-XBkXEII/AAAAAAAAJX4/KhNQ7QcAeP4vWmf22yRYV9XjTpYV9dXsgCLcBGAs/s1600/722b94e0-2582-4237-b80a-2fdd6894b60a.jpg"
-          class="img-fluid" lt="240px" width="100%">
-        <div class="card-body">
+        <div class="card col-md-6 offset-md-3">
+          <div class="header d-flex justify-content-between mt-3 mb-3 ms-3 me-3">
+            <h4 class="fs-4">Failing </h4>
+            <h5 class="fs-6">1/2</h5>
+          </div>
+          <img src="https://jasonhibbs.co.uk/wp-content/uploads/2016/07/1468739747.jpg" class="img-fluid" alt="240px"
+            width="100%"">
+          <div class=" card-body">
           <p class="card-text  fs-4">
             <strong> 260 Likes</strong>
             <br>
-            ... to experience infinity in a second.
+            .. is a part of the play with the Ocean.
+          </p>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="card col-md-6 offset-md-3">
+        <div class="header d-flex justify-content-between mt-3 mb-3 ms-3 me-3">
+          <h4 class="fs-4"> Growing </h4>
+          <h5 class="fs-6">2/2</h5>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1582108719562-c06540b4aa8e?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjE2MDExMn0"
+          class="img-fluid" lt="240px" width="100%">
+        <div class=" card-body">
+          <p class="card-text  fs-4">
+            <strong> 270 Likes</strong>
+            <br>
+            ...a natural process that enables to adapt to constant changes.
+          </p>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="card col-md-6 offset-md-3">
+        <div class="header d-flex justify-content-between mt-3 mb-3 ms-3 me-3">
+          <h4 class="fs-4"> Observing </h4>
+          <h5 class="fs-6">3/2</h5>
+        </div>
+        <img src="https://i.pinimg.com/originals/8e/cd/37/8ecd37e7792c367958581ca85fb6ee6b.jpg" class="img-fluid"
+          lt="240px" width="100%">
+        <div class=" card-body">
+          <p class="card-text  fs-4">
+            <strong> 280 Likes</strong>
+            <br>
+            ...to know how water and land collaborate.
+          </p>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="card col-md-6 offset-md-3">
+        <div class="header d-flex justify-content-between mt-3 mb-3 ms-3 me-3">
+          <h4 class="fs-4"> Surfing </h4>
+          <h5 class="fs-6">1/3</h5>
+        </div>
+        <img
+          src="https://cdn.theatlantic.com/thumbor/BiydSCme-1i0xKXLWffD83OpbTw=/1230x0:3500x2270/1080x1080/media/img/mt/2017/07/RTR4LBC8/original.jpg"
+          jsaction="VQAsE" class="img-fluid" lt="240px" width="100%">
+
+        <div class=" card-body">
+          <p class="card-text  fs-4">
+            <strong> 290 Likes</strong>
+            <br>
+            ... go with-in the ocean, not against.
+          </p>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="card col-md-6 offset-md-3">
+        <div class="header d-flex justify-content-between mt-3 mb-3 ms-3 me-3">
+          <h4 class="fs-4"> Immersing </h4>
+          <h5 class="fs-6">2/3</h5>
+        </div>
+        <img src="https://cdn.shopify.com/s/files/1/1035/1651/files/Website-Hero-2023-mobile.jpg?v=1695209358"
+          class="img-fluid" alt="240px" width="100%">
+        <div class=" card-body">
+          <p class="card-text fs-4">
+            <strong> 300 Likes</strong>
+            <br>
+            ... to become a part as much as one with the ocean.
           </p>
         </div>
       </div>
@@ -225,116 +302,25 @@
 
       <div class="card col-md-6 offset-md-3">
         <div class="header d-flex justify-content-between mt-3 mb-3 ms-3 me-3">
-          <h4 class="fs-4">Failing </h4>
-          <h5 class="fs-6">1/2</h5>
+          <h4 class="fs-4"> Waving </h4>
+          <h5 class="fs-6">3/3</h5>
         </div>
-        <img src="https://jasonhibbs.co.uk/wp-content/uploads/2016/07/1468739747.jpg" class="img-fluid" alt="240px"
-          width="100%"">
-          <div class=" card-body">
-        <p class="card-text  fs-4">
-          <strong> 260 Likes</strong>
-          <br>
-          .. is a part of the play with the Ocean.
-        </p>
+        <img src="https://images.impresa.pt/sicnot/2023-04-19-Oceano.jpg-09491744/1x1/mw-1200&outputFormat=jpeg"
+          class="img-fluid" alt="240px" width="100%">
+        <div class=" card-body">
+          <p class="card-text fs-4">
+            <strong> 310 Likes</strong>
+            <br>
+            ..to the vividness of your life.
+          </p>
+        </div>
       </div>
+
     </div>
 
-    <br>
-
-    <div class="card col-md-6 offset-md-3">
-      <div class="header d-flex justify-content-between mt-3 mb-3 ms-3 me-3">
-        <h4 class="fs-4"> Growing </h4>
-        <h5 class="fs-6">2/2</h5>
-      </div>
-      <img
-        src="https://images.unsplash.com/photo-1582108719562-c06540b4aa8e?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjE2MDExMn0"
-        class="img-fluid" lt="240px" width="100%">
-      <div class=" card-body">
-        <p class="card-text  fs-4">
-          <strong> 270 Likes</strong>
-          <br>
-          ...a natural process that enables to adapt to constant changes.
-        </p>
-      </div>
-    </div>
-
-    <br>
-
-    <div class="card col-md-6 offset-md-3">
-      <div class="header d-flex justify-content-between mt-3 mb-3 ms-3 me-3">
-        <h4 class="fs-4"> Observing </h4>
-        <h5 class="fs-6">3/2</h5>
-      </div>
-      <img src="https://i.pinimg.com/originals/8e/cd/37/8ecd37e7792c367958581ca85fb6ee6b.jpg" class="img-fluid"
-        lt="240px" width="100%">
-      <div class=" card-body">
-        <p class="card-text  fs-4">
-          <strong> 280 Likes</strong>
-          <br>
-          ...to know how water and land collaborate.
-        </p>
-      </div>
-    </div>
-
-    <br>
-
-    <div class="card col-md-6 offset-md-3">
-      <div class="header d-flex justify-content-between mt-3 mb-3 ms-3 me-3">
-        <h4 class="fs-4"> Surfing </h4>
-        <h5 class="fs-6">1/3</h5>
-      </div>
-      <img
-        src="https://cdn.theatlantic.com/thumbor/BiydSCme-1i0xKXLWffD83OpbTw=/1230x0:3500x2270/1080x1080/media/img/mt/2017/07/RTR4LBC8/original.jpg"
-        jsaction="VQAsE" class="img-fluid" lt="240px" width="100%">
-
-      <div class=" card-body">
-        <p class="card-text  fs-4">
-          <strong> 290 Likes</strong>
-          <br>
-          ... go with-in the ocean, not against.
-        </p>
-      </div>
-    </div>
-
-    <br>
-
-    <div class="card col-md-6 offset-md-3">
-      <div class="header d-flex justify-content-between mt-3 mb-3 ms-3 me-3">
-        <h4 class="fs-4"> Immersing </h4>
-        <h5 class="fs-6">2/3</h5>
-      </div>
-      <img src="https://cdn.shopify.com/s/files/1/1035/1651/files/Website-Hero-2023-mobile.jpg?v=1695209358"
-        class="img-fluid" alt="240px" width="100%">
-      <div class=" card-body">
-        <p class="card-text fs-4">
-          <strong> 300 Likes</strong>
-          <br>
-          ... to become a part as much as one with the ocean.
-        </p>
-      </div>
-    </div>
-    <br>
-
-    <div class="card col-md-6 offset-md-3">
-      <div class="header d-flex justify-content-between mt-3 mb-3 ms-3 me-3">
-        <h4 class="fs-4"> Waving </h4>
-        <h5 class="fs-6">3/3</h5>
-      </div>
-      <img src="https://images.impresa.pt/sicnot/2023-04-19-Oceano.jpg-09491744/1x1/mw-1200&outputFormat=jpeg"
-        class="img-fluid" alt="240px" width="100%">
-      <div class=" card-body">
-        <p class="card-text fs-4">
-          <strong> 310 Likes</strong>
-          <br>
-          ..to the vividness of your life.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
